@@ -24,8 +24,8 @@ if test -f "$asterisk_include_dir/asterisk.h"; then
 else
     AC_MSG_ERROR([Could not find asterisk.h, make sure Asterisk development package is installed])
 fi
-ASTERISK_MODDIR="${prefix}/lib/asterisk/modules"
-ASTERISK_CONF_DIR="${prefix}/etc/asterisk"
+ASTERISK_MODDIR="${libdir}/asterisk/modules"
+ASTERISK_CONF_DIR="/etc/asterisk"
 AC_SUBST(ASTERISK_INCLUDES)
 AC_SUBST(ASTERISK_MODDIR)
 AC_SUBST(ASTERISK_CONF_DIR)
