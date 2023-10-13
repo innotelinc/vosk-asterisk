@@ -71,7 +71,7 @@ else
     # send to vosk server
     vosk-ffmpeg.py stream.part3.wav  > audio.txt
     # extract te vosk server response
-    TRANSCRIPT=`cat audio.txt | grep text  | sed 's#^.*"text"\ : "##g' | sed 's#"$#.#g'`
+    TRANSCRIPT=`cat audio.txt | grep ' "text" :' | grep -v "\ \"text\"\ :\ \"\"" | sed 's#^.*"text"\ : "#"#g'`
   fi
 
   # generate the new mp3 attachment header 
