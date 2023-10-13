@@ -1,4 +1,4 @@
-#! /bin/sh 
+#! /bin/bash 
 # Asterisk voicemail attachment conversion script 
 # Revision history :
 # 22/11/2010 - V1.0 - Creation by N. Bernaerts
