@@ -85,9 +85,9 @@ else
   cat stream.part2 >> stream.new 
   if [ -x "$VOSKPY" ]; then
     # Insert our STT Transcription
-    echo "==== BEGIN SpeechToText TRANSCRIBED MESSAGE ==== " >> stream.new
+    echo "==== BEGIN TRANSCRIBED MESSAGE ==== " >> stream.new
     echo "$TRANSCRIPT " >> stream.new
-    echo "==== END SpeechToText TRANSCRIBED MESSAGE ====" >> stream.new
+    echo "==== END TRANSCRIBED MESSAGE ====" >> stream.new
   fi
   echo >> stream.new
   echo >> stream.new
